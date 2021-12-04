@@ -13,7 +13,7 @@ BUILD_DIR=$(mktemp -d)
 cd $BUILD_DIR
 git clone --depth 1 --branch v1.0 https://github.com/artemsen/swaykbdd.git
 cd swaykbdd/
-apt install -y pkg-config libjson-c-dev
+apt install -y libjson-c-dev
 meson build
 ninja -C build
 USER=root dh_make --single --yes --createorig -p swaykbdd_1.0

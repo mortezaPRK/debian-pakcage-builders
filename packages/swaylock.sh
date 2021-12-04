@@ -13,7 +13,7 @@ BUILD_DIR=$(mktemp -d)
 cd $BUILD_DIR
 git clone --depth 1 --branch 1.5 https://github.com/swaywm/swaylock.git
 cd swaylock/
-apt install -y pkg-config wayland-protocols scdoc libwayland-dev libxkbcommon-dev libcairo2-dev libpam0g-dev cmake
+apt install -y wayland-protocols scdoc libwayland-dev libxkbcommon-dev libcairo2-dev libpam0g-dev
 meson build
 ninja -C build
 USER=root dh_make --single --yes --createorig -p swaylock_1.5
