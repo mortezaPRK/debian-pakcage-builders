@@ -1,0 +1,7 @@
+**
+
+!/.gitignore
+!/.dockerignore
+!/packages/**
+!/packages
+!/Dockerfile
